@@ -1,0 +1,874 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proceso de Turnos - Entrenamiento</title>
+  <link rel="stylesheet" type="text/css" href="Estilo.css">
+
+
+</head>
+
+<body>
+
+  <div class="Cabezote">
+
+    <div class="CabezoteContIzq">
+      <img style="align-self: center;" src="Imagenes/LogoTQ.png" alt="">
+      <a href="">Proceso de turnos</a>
+      <div class="vl"></div>
+      <a class="subTag" href="">Entrenamiento</a>
+    </div>
+
+    <div class="CabezoteContDer">
+
+      <a class="link" href="Ayuda.html">Ayuda</a>
+      <img style="align-self:center; padding-left: 20px; margin-right: -15px;" src="Imagenes/Flotador.png" alt="">
+      <a class="link" href="">Entrenamiento</a>
+
+    </div>
+
+  </div>
+
+  <div class="instrucciones">
+
+    <h1>Instrucciones</h1>
+    <p>Haz clic en los recuadros azules para acceder a la información correspondiente a cada etapa del proceso y sus
+      entrenamientos respectivos. Recuerda que el buen funcionamiento de todo el proceso es responsabilidad conjunta de
+      cada parte.</p>
+
+  </div>
+
+  <div class="advertencia" style="text-align: center;">
+
+    <h1>Por favor, utilizar una pantalla más grande</h1>
+
+  </div>
+
+  <div class="divMapa">
+
+    <div class="relacionesLab">
+
+      <h1> <span class="lineaLimite"></span> Relaciones laborales & Recursos humanos planta <span
+          class="lineaLimite"></span></h1>
+    </div>
+    <div class="cuadroAzul"></div>
+
+    <div class="nivelUno">
+
+      <img class="flechaArriba" src="Imagenes/flecha_arriba.png" alt="">
+
+      <button type="button" id="btnNovedades" style="margin-left: -200px;">
+        <img src="Imagenes/Novedades.png" alt="">
+        <br>
+        Novedades
+        <br>
+        <span class="subTag">ausentismo</span>
+      </button>
+
+      <img class="flechaArribaDos" src="Imagenes/flecha_arriba_2.png" alt="">
+
+    </div>
+
+
+    <!------------------------------>
+
+    <div class="nivelDos">
+
+      <button type="button" id="btnUno" class="popup" onmouseover="myFunctionShow()" onmouseout="myFunctionHide()">
+        <span class="popuptext" id="myPopup">Personal PAE<br> Analista de información</span>
+        <img src="Imagenes/Enrolamiento.png" alt="">
+        <br>
+        Enrolamiento
+        <br>
+        <span class="subTag">creación en Falcon</span>
+      </button>
+
+      <img src="Imagenes/flecha.png" alt="" style="margin-left: -25px;">
+
+      <button type="button" id="btnAsignacion">
+        <img src="Imagenes/Asignacion.png" alt="">
+        <br>
+        Asignación
+        <br>
+        <span class="subTag">de turno</span>
+      </button>
+
+      <img src="Imagenes/flecha.png" alt="" style="margin-left: -25px;">
+
+      <button type="button" id="btnIngreso">
+        <img src="Imagenes/Ingreso.png" alt="">
+        <br>
+        Ingreso diario
+        <br>
+        <span class="subTag">“trabajar”</span>
+      </button>
+
+      <button class="btnNomina" type="button" id="botonNomina">
+        <img src="Imagenes/Nomina.png" alt="">
+        <br>
+        Reportes de <br> Nómina
+      </button>
+      <img src="Imagenes/flecha.png" alt="" style="margin-left: -25px;">
+      <button class="btnBlancos" type="button">
+        <img src="Imagenes/Autorizados.png" alt="">
+        <br>
+        <span class="subTagGris">Autorizados</span>
+        <br>
+        2 niveles de jerarquía
+        <br>
+        Jefe / Jefe del jefe
+
+      </button>
+      <img src="Imagenes/flecha.png" alt="" style="margin-left: -25px;">
+      <button class="btnBlancos" type="button">
+        <img src="Imagenes/Operacion.png" alt="">
+        <br>
+        <span class="subTagGris">Operación de nómina
+        </span>
+        <br>
+        Analistas de nómina
+      </button>
+      <img src="Imagenes/flecha.png" alt="" style="margin-left: -25px;">
+      <button class="btnVerde" type="button">
+        <img src="Imagenes/Pago.png" alt="">
+        <br>
+        Pago a trabajadores
+      </button>
+
+    </div>
+
+    <!------------------------------>
+
+    <div class="nivelTres">
+
+      <img class="flechaAbajo" src="Imagenes/flecha_abajo.png" alt="">
+      <button type="button" style="margin-left: -200px;">
+        <img src="Imagenes/Jornada.png" alt="">
+        <br>
+        Jornada adicional
+        <br>
+        <span class="subTag">horas extras</span>
+      </button>
+
+      <img class="flechaAbajoDos" src="Imagenes/flecha_abajo_2.png" alt="">
+
+    </div>
+
+  </div>
+
+  <!------------------------------>
+
+  <!-- MODAL ENROLAMIENTO -->
+
+  <div id="modalEnrolamiento" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+
+      <div class="coverEnrola">
+        <div class="cabezoteCover">
+
+          <h3> <strong>Módulo 1 &nbsp; &nbsp;-</strong> </h3>
+          <a class="ayudaCover" href="Ayuda.html">Ayuda</a>
+        </div>
+        <img src="Imagenes/Enrolamiento.png" alt="" style="margin-top: 60px;">
+        <h2>ENROLAMIENTO</h2>
+        <span class="subTituloCover">Creación en Falcon</span>
+      </div>
+
+      <div class="textual">
+        <h6>- Enrolamiento</h6>
+        <h1>GENERALIDADES</h1>
+        <p> <strong>1.</strong> El proceso de enrolamiento se debe hacer desde la empresa Padre con el súper usuario
+          (PAE) para que
+          pueda asociar a las personas a las empresas hijas y sucursales. (Confirmar si el dispositivo se debe o no
+          asociar y desasociar desde la empresa hija o debe hacerse directamente desde la empresa Padre).
+          <br> <br>
+          <strong>2.</strong> El PAE es quién debe velar por hacer de manera oportuna el enrolamiento de las personas
+          TQ una vez se les haga el proceso de contratación. Para el caso de Contratistas se hace a través del
+          Coordinador de Gestión de Terceros.
+          <br> <br>
+          <strong>3.</strong> Las unidades o dispositivos deben estar asociadas en el PAE desde el proceso de
+          contratación y asociados a los diferentes territorios. La Sucursal = Área Falcón.
+
+          <span id="dots">...</span><span id="more">
+            <br> <br>
+            <strong>4. </strong> Se debe guardar la información biométrica de cada colaborador y esta a su vez pueda
+            asociarse para los diferentes servicios que se requieran. Ej.: Alimentación, Tiempos, Control de Ingresos
+            etc. Esta información debe ser validada y autorizada por el colaborador por medio de un formato de
+            autorización que él mismo firma en el momento del enrolamiento.
+            <br> <br>
+            <strong>5. </strong> Se deben enrolar mínimo tres huellas de cada persona (Dedo índice de la mano derecha
+            y el corazón e índice de la mano derecha.) En caso de que no se puedan enrolar los dedos mencionados se
+            debe seguir enrolando otros dedos hasta que se pueda obtener satisfactoriamente las huellas. Si por algún
+            motivo no se puede enrolar ningún dedo se le debe suministrar al colaborador un carné (Printer) con código
+            de barras para que pueda acceder a los servicios que el biométrico realiza.
+            <br> <br>
+            <strong>6. </strong> El Auxiliar de Información PAE debe validar que se haya hecho el enrolamiento de
+            manera exitosa.
+            <br> <br>
+            <strong>7. </strong> El Auxiliar de Información del PAE xxxxx para Personal TQ y el Coordinador de Gestión
+            de Terceros para Contratistas deben hacer el proceso de enrolamiento de huella en el dispositivo
+            verificando que las huellas suban y luego entrar a la empresa TQ xxxx o en el caso de Contratistas con el
+            Smart Acces a la empresa contratista y editar los campos obligatorios en el sistema Falcon .
+            <br> <br>
+            <strong>8. </strong> El Auxiliar de Información PAE debe archivar el registro de autorización de
+            enrolamiento autorizado por el colaborador para el personal TQ y para el contratista lo debe hacer Gestión
+            de Terceros .
+            <br> <br>
+            <strong>9. </strong> En el momento que el colaborador registre la marcación en un territorio si se
+            presenta un error de lectura de huella o algún incidente con la marcación se debe dirigir a Recursos
+            Humanos en Planta. Para que pueda solucionarle de momento el incidente.
+            <br> <br>
+            <strong>10. </strong> Cuando un colaborador hace la marcación de entrada a un territorio y luego debe
+            desplazarse a otro durante la misma jornada laboral éste debe asegurarse de marcar la salida, para luego
+            marcar nuevamente el ingreso al territorio a donde se desplazó y hacer la marcación donde termina su
+            jornada laboral. (xxxx Revisar si este proceso se va realizar haciendo la marcación de los turnos xxxx).
+            <br> <br>
+            <strong>11. </strong> Cada semana viernes se debe borrar en el dispositivo las personas enroladas
+            confirmadas ya hayan subido a Falcon y estén validadas en Q7 (Pendiente de defrinir cada cuanto El
+            Auxiliar de Información debe borrar las huellas del dispositivo)
+          </span>
+        </p>
+        <button onclick="mostrarMas()" id="myBtn">Leer más</button>
+
+        <!-- Normas -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> Es responsabilidad de xxxxxx el oportuno y correcto enrolamiento de los colaboradores
+          ( TQ Y Contratistas)
+
+          <br><br>
+          <strong>2. </strong> Es responsabilidad de xxxxxx validar el correcto enrolamiento del colaborador( TQ y
+          Contratistas)
+
+          <br><br>
+
+          <strong>3.</strong> Es responsabilidad de xxxxxx archivar el formato de autorización de huellas firmada por
+          el colaborador ( TQ y contratistas)
+
+          <span id="dotsNormas">...</span><span id="moreNormas">
+            <br><br>
+            <strong>4.</strong> Los dispositivos deben estar ubicados en un lugar donde no esté expuesto al agua y se
+            garantice su
+            integridad.
+            <br><br>
+            <strong>5.</strong> Los dispositivos deben cargarse a una fuente reguladora xxxxx de energía de 110
+            voltios.
+            <br><br>
+            <strong>6.</strong> Los dispositivos deben estar en red para que pueda viajar la información de manera
+            oportuna
+            internamente en el sistema.
+            <br><br>
+            <strong>7.</strong> Los dispositivos de los territorios deben estar a cargo de Recursos Humanos Planta.
+            <br><br>
+            <strong>8.</strong> Los dispositivos deben estar ubicados en un lugar donde no esté expuesto al agua y se
+            garantice su
+            integridad.
+          </span>
+        </p>
+
+        <button onclick="mostrarMasNormas()" id="myBtnNormas">Leer más</button>
+
+        <h1>PASO A PASO</h1>
+        <p>Enrolamiento de personal TQ y contratista</p>
+
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Enrolamiento_Huella.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+
+        <h6>- Configuración de Unidades Biométricas</h6>
+
+        <h1 style="margin-top: -20px;">GENERALIDADES</h1>
+        <p> <strong>1.</strong> El proceso de configuración de los dispositivos de marcación biométrica permite
+          asegurar que los registros que los colaboradores realicen en el dispositivo, viajen de manera correcta a la
+          plataforma del sistema en línea y en tiempos real.
+        </p>
+
+        <!-- Normas -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> Para la adquisición de dispositivos de marcación biométrica, se debe informar al
+          proveedor de los mismos, además de diligenciar XXXX documentos e informar a XXXX departamentos.
+          <br><br>
+          <strong>2. </strong> Es responsabilidad de XXX la oportuna y correcta configuración de los dispositivos de
+          marcación biométrica.
+          <br><br>
+          <strong>3.</strong> Es responsabilidad de XXX verificar la correcta configuración de los dispositivos de
+          marcación biométrica.
+          <br><br>
+          <strong>4.</strong> Para la correcta configuración de los dispositivos, TI debe suministrar la información
+          necesaria, como la dirección IP, Mascara de red, puerto de enlace y DNS del servidor.
+          <br><br>
+          <strong>5.</strong> Para la correcta configuración de los dispositivos, el proveedor de los mismos debe
+          suministrar la información correspondiente a Dirección web del servidor y Puerto de servidor.
+          <br><br>
+          <strong>6.</strong> Para la instalación de los dispositivos de marcación biométrica se debe informar a XXXXX,
+          indicando el lugar exacto de la ubicación del dispositivo para adecuar la infraestructura necesaria.
+        </p>
+
+        <h1>PASO A PASO</h1>
+
+        <p>Configuración de Unidades Biométricas</p>
+
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Config_unidades_biometricas.mp4" type="video/mp4">
+      </video>
+
+      <!-- CREACION DE USUARIOS -->
+      <div class="textual">
+
+        <h6>- Creación de Usuarios</h6>
+
+        <h1 style="margin-top: -20px;">GENERALIDADES</h1>
+        <p> <strong>1.</strong> El proceso de inclusión de un usuario en el sistema solo se puede realizar al momento
+          que sea autorizado para tener diferentes accesos a la plataforma.
+        </p>
+
+        <!-- Normas -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> Es responsabilidad del (Pendiente) de regionales o países, la oportuna y correcta
+          inclusión del usuario en la plataforma Falcón.
+          <br><br>
+          <strong>2. </strong> Es responsabilidad del (Pendiente) asignado verificar la correcta inclusión de los
+          usuarios en la plataforma Falcón.
+        </p>
+
+        <h1>PASO A PASO</h1>
+        <p>Creación de Usuarios</p>
+
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Creacion_de_usuarios.mp4" type="video/mp4">
+      </video>
+
+      <!-- CREACION MASIVA DE COLABORADORES-->
+      <div class="textual">
+
+        <h6>- Guia para la creación masiva de Colaboradores</h6>
+
+        <h1 style="margin-top: -20px;">GENERALIDADES</h1>
+        <p> <strong>1.</strong> El proceso de cargue de colaboradores de forma masiva en el sistema, solo se puede
+          realizar cuando se deba actualizar la versión de la plataforma o en otros casos específicos.
+          <br><br>
+          <strong>2.</strong> La plantilla para el cargue de colaboradores se debe diligenciar de acuerdo a la
+          información suministrada por XXX
+        </p>
+
+        <!-- Normas -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> Es responsabilidad de TI el oportuna y correcto cargue masivo de los colaboradores en el
+          sistema Falcon
+          <br><br>
+          <strong>2. </strong> Es responsabilidad de XXX verificar el cargue correcto de los colaboradores en el sistema
+          <br><br>
+          <strong>3. </strong> La información necesaria para el cargue de los colaboradores en la plataforma debe ser
+          proporcionada por XXXX
+        </p>
+
+        <h1>PASO A PASO</h1>
+        <p>Cargue masivo de colaboradores</p>
+
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Guia_para_la_creacion_masiva_de_Colaboradores.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <h1>DESCARGABLES</h1>
+
+        <ul>
+          <li> <a href="Descargables/Manual_Falcon_Cloud_V5.pdf" class="descargables" download>Manual de Falcon </a>
+          </li>
+          <li><a href="" class="descargables">Anexo con los subconceptos</a></li>
+          <li><a href="Descargables/Plantilla_para_el_cargue_de_colaboradores.xlsx" class="descargables">Plantilla para
+              el cargue de los Colaboradores</a></li>
+        </ul>
+
+      </div>
+      <br><br><br><br>
+      <a href="mailto:entrenamiento@tecnoquimicas.com" class="descargables">Enviar comentarios</a>
+
+    </div>
+
+  </div>
+
+  <!-- MODAL ASIGNACIÓN DE TURNO -->
+
+  <div id="modalAsignacionTurnos" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+
+      <div class="coverTurnos">
+        <div class="cabezoteCover">
+
+          <h3> <strong>Módulo 2 &nbsp; &nbsp;-</strong> </h3>
+          <a class="ayudaCover" href="Ayuda.html">Ayuda</a>
+        </div>
+        <img src="Imagenes/Turnos.png" alt="" style="margin-top: 60px;">
+        <h2>CREACIÓN Y ASIGNACIÓN DE TURNOS</h2>
+      </div>
+
+      <div class="textual">
+
+        <h6>- Creación y actualización</h6>
+
+        <h1 style="margin-top: -20px;">GENERALIDADES</h1>
+        <p> <strong>1.</strong> El proceso de creación o actualización de turnos se debe realizar en casos
+          específicos, donde por motivos productivos, o de otra índole, de las plantas de Tecnoquímicas sea necesario
+          agregar otro turno de trabajo, o actualizar un turno existente.
+        </p>
+
+        <!-- Normas -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> Es responsabilidad del Jefe de área la oportuna y correcta creación/actualización de
+          los turnos el sistema Falcon
+          <br><br>
+          <strong>2. </strong> Es responsabilidad de Recursos Humanos verificar la correcta creación/actualización de
+          los turnos en el sistema
+          <br><br>
+          <strong>3.</strong> En el caso en el que sea necesario la creación o actualización de un turno, el jefe de
+          área debe diligenciar el formato de solicitud para creación/actualización de turnos.
+          <br><br>
+          <strong>4.</strong> Cuando sea necesario la creación o actualización de un turno, el responsable de
+          recursos humanos del territorio debe verificar que la solicitud cumpla con las normas vigentes y el marco
+          corporativo.
+          <br><br>
+          <strong>5.</strong> Cuando la solicitud de creación o modificación de un turno no cumpla alguna de las
+          normas del marco corporativo, relaciones laborales deberá verificar el turno para su aprobación.
+
+        </p>
+
+        <h1>PASO A PASO</h1>
+
+        <p>Creación de turnos</p>
+
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Creacion_de_turnos.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Actualización de turnos</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Actualizacion_de_turnos.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+
+        <h6>- Asignación</h6>
+
+        <h1 style="margin-top: -20px;">GENERALIDADES</h1>
+        <p> <strong>1.</strong> El proceso de asignación de turnos se debe realizar una vez el jefe de área, o la
+          persona responsable, realice la programación de turnos de sus áreas respectivas.
+          <br><br>
+          <strong>2.</strong> Se debe tener como insumo los documentos con la programación de turnos realizada por los
+          jefes de áreas o las personas encargas del proceso.
+          <br><br>
+          <strong>3.</strong> El proceso de divulgación de turnos a los colaboradores debe realizarse en un periodo de
+          tiempo razonable. En Tecnoquímicas es con XXX días de antelación.
+        </p>
+
+        <!-- Normas -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> Es responsabilidad del Jefe de área la oportuna y correcta creación/actualización de
+          los turnos el sistema Falcon
+          <br><br>
+          <strong>2. </strong> Es responsabilidad del jefe verificar la correcta asignación de los turnos en el sistema.
+          <br><br>
+          <strong>3.</strong> Es responsabilidad del programador realizar la divulgación de los turnos a los
+          colaboradores.
+
+        </p>
+
+      </div>
+
+      <div class="textual">
+        <br>
+
+        <h1>PASO A PASO</h1>
+        <p>Asignación de turnos</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Asignacion_de_turnos.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Asignación masiva de turnos</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Asignacion_de_turnos_(archivo_plano).mp4" type="video/mp4">
+      </video>
+
+      <!-- FESTIVOS -->
+
+      <div class="textual">
+
+        <h6>- Festivos</h6>
+
+        <h1 style="margin-top: -20px;">GENERALIDADES</h1>
+        <p> <strong>1.</strong> El cargue de los festivos en el sistema Falcon, es un proceso que se debe realizar de
+          manera anual.
+          <br><br>
+          <strong>2.</strong> Para el cargue de los festivos, se deben consultar fuentes de información confiables para
+          determinar las fechas correspondientes.
+        </p>
+
+        <!-- Normas -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> Es responsabilidad del TI el cargue oportuno y correcto de los días festivos en el
+          sistema Falcon
+          <br><br>
+          <strong>2. </strong> Es responsabilidad de XXX verificar la correcta creación de los días festivos en el
+          sistema
+          <br><br>
+          <strong>3.</strong> El cargue de los festivos en el sistema se debe realizar anualmente.
+        </p>
+
+        <h1>PASO A PASO</h1>
+        <p>Cargue Festivos</p>
+
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Cargue_Festivos.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Cargue Festivos (Archivo)</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Cargue_Festivos_(Archivo).mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <h1>DESCARGABLES</h1>
+
+        <ul>
+          <li> <a href="Descargables/Manual_Falcon_Cloud_V5.pdf" class="descargables" download>Plantilla para la
+              creación de turnos</a>
+          </li>
+          <li><a href="Descargables/Formato_para_creacion_actualizacion_de_turnos.docx" class="descargables">Formato de
+              solicitud para creación/actualización de turnos</a></li>
+          <li><a href="Descargables/Plantilla_asignacion_de_turnos.xls" class="descargables">Plantilla para la
+              asignación de turnos</a></li>
+          <li><a href="Descargables/Plantilla_para_divulgacion_de_turnos.xlsx" class="descargables">Plantilla para la
+              divulgación de turnos</a></li>
+          <li><a href="Descargables/Plantilla_para_el_cargue_de_festivos.xlsx" class="descargables">Plantilla para el
+              cargue de Festivos</a></li>
+
+        </ul>
+
+      </div>
+      <br><br><br><br>
+      <a href="mailto:entrenamiento@tecnoquimicas.com" class="descargables">Enviar comentarios</a>
+
+    </div>
+
+  </div>
+
+  <!-- MODAL NOVEDADES -->
+
+  <div id="modalNovedades" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+
+      <div class="coverNovedades">
+        <div class="cabezoteCover">
+
+          <h3> <strong>Módulo 3 &nbsp; &nbsp;-</strong> </h3>
+          <a class="ayudaCover" href="Ayuda.html">Ayuda</a>
+        </div>
+        <img src="Imagenes/Novedades.png" alt="" style="margin-top: 60px;">
+        <h2>NOVEDADES</h2>
+        <span class="subTituloCover">Ausentismos</span>
+      </div>
+
+      <div class="textual">
+
+        <h6>- Creación de Novedades </h6>
+
+        <h1 style="margin-top: -20px;">GENERALIDADES</h1>
+        <p> <strong>1.</strong> El proceso de configuración y la asignación de Novedades se debe hacer por desde la
+          Sucursal y el proceso se debe hacer de manera oportuna.
+          <br><br>
+          <strong>2.</strong> Las novedades están establecidas y la directriz de como se deben llevar pertenece al área
+          de relaciones laborales
+          <br><br>
+          <strong>3.</strong> La novedades también se pueden manejar como los absentismo
+        </p>
+
+        <!-- Responsabilidades -->
+
+        <h1>RESPONSABLES</h1>
+        <p> <strong>1.</strong> Es responsabilidad del Programados o Jefe, la oportuna y correcta inclusión de los
+          tipos de novedades en modificaciones y actualizaciones en el sistema Falcon.
+          <br><br>
+          <strong>2. </strong> Es responsabilidad de Relaciones Laborales en el cargo de xxxxxx validar las Novedades
+          que se crean modifican o actualicen en el Sistema Falcon.
+          <br><br>
+          <strong>3.</strong> Es responsabilidad de Relaciones Laborales divulgar a personal que asigna y autoriza
+          Novedades los cambios o modificaciones de los tipos Novedad si es remunerada o no.
+          <span id="dotsNormasNovedades">...</span><span id="moreNormasNovedades">
+            <br><br>
+            <strong>4.</strong> Es responsabilidad del Colaborador informar y hacer llegar el soporte de la novedad
+            de manera oportuna al Jefe.
+            <br><br>
+            <strong>5.</strong> Es Responsabilidad del Programador de Planta o Jefe asignar oportunamente la novedad en
+            el sistema.
+            <br><br>
+            <strong>6.</strong> Es responsabilidad del Jefe autorizar y hacer llegar la autorización o el soporte de
+            la novedad a Relaciones Laborales xxxxxx.
+            <br><br>
+            <strong>7.</strong> Es responsabilidad del Jefe del Jefe validar las Novedades autorizadas recibidas.
+            <br><br>
+            <strong>8.</strong> Es responsabilidad del Jefe del Jefe liquidar las novedades recibidas que son
+            remuneradas.
+          </span>
+        </p>
+
+        <button onclick="mostrarMasNormas()" id="myBtnNormasNovedades">Leer más</button>
+
+      </div>
+
+      <div class="textual">
+        <br>
+
+        <h1>PASO A PASO</h1>
+        <p>Crear tipo de Novedad</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Crear_tipo_de_Novedad.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Crear Novedad individual</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Crear_Novedad_Individual.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Crear Novedad Desde el calendario</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Crear_Novedad_Calendario.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Crear Novedad Masiva</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Crear_Novedad_Masiva.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Visualizar Novedad</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Visualizar_Novedad.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Autorización de Novedades</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Autorizacion_de_Novedades.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <h1>DESCARGABLES</h1>
+
+        <ul>
+          <li> <a href="Descargables/Manual_Falcon_Cloud_V5.pdf" class="descargables" download>Manual de Falcon</a>
+          </li>
+          <li><a href="Descargables/Formato_para_creacion_actualizacion_de_turnos.docx" class="descargables">Maestra de
+              Novedades</a></li>
+          <li><a href="Descargables/Plantilla_asignacion_de_turnos.xls" class="descargables">Matriz para la
+              administración de ausentismo en Colombia</a></li>
+          <li><a href="Descargables/Plantilla_para_divulgacion_de_turnos.xlsx" class="descargables">Formato de novedades
+              (Permisos, vacaciones, etc.)</a></li>
+          <li><a href="Descargables/Plantilla_para_divulgacion_de_turnos.xlsx" class="descargables">Anexo de novedades
+              remuneradas y no remuneradas </a></li>
+
+        </ul>
+
+      </div>
+      <br><br><br><br>
+      <a href="mailto:entrenamiento@tecnoquimicas.com" class="descargables">Enviar comentarios</a>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL INGRESOS -->
+
+  <div id="modalIngreso" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+
+      <div class="coverIngreso">
+        <div class="cabezoteCover">
+
+          <h3> <strong>Módulo 4 &nbsp; &nbsp;-</strong> </h3>
+          <a class="ayudaCover" href="Ayuda.html">Ayuda</a>
+        </div>
+        <img src="Imagenes/Ingreso.png" alt="" style="margin-top: 60px;">
+        <h2>INGRESO DIARIO</h2>
+      </div>
+
+      <div class="textual">
+        <br>
+
+        <h1>PASO A PASO</h1>
+        <p>Marcación Manual</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Marcacion_Manual.mp4" type="video/mp4">
+      </video>
+      <br><br><br><br>
+      <a href="mailto:entrenamiento@tecnoquimicas.com" class="descargables">Enviar comentarios</a>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL NOMINA -->
+
+  <div id="modalNomina" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+
+      <div class="coverNomina">
+        <div class="cabezoteCover">
+
+          <h3> <strong>Módulo 4 &nbsp; &nbsp;-</strong> </h3>
+          <a class="ayudaCover" href="Ayuda.html">Ayuda</a>
+        </div>
+        <img src="Imagenes/Novedades.png" alt="" style="margin-top: 60px;">
+        <h2>REPORTES DE NÓMINA</h2>
+      </div>
+
+      <div class="textual">
+
+        <h1>GENERALIDADES</h1>
+        <p> <strong>1.</strong> Por defecto el sistema configura los periodos desde el primero de cada mes hasta el
+          final de este.
+          <br><br>
+          <strong>2.</strong> La configuración del periodo de nómina se hace una sola vez y se generar anualmente.
+          <br><br>
+          <strong>3.</strong> La creación y configuración del periodo de nómina se debe realizar solo por la persona
+          responsable del proceso.
+        </p>
+
+        <!-- Responsabilidades -->
+
+        <h1>NORMAS</h1>
+        <p> <strong>1.</strong> La configuración del periodo de nómina se debe hacer a nivel de Empresa Hija.
+          <br><br>
+          <strong>2. </strong> Es responsabilidad del XXXXXXXXXX, la oportuna y correcta creación, modificación y/o
+          configuración de los periodos de nómina en el sistema Falcon.
+          <br><br>
+          <strong>3.</strong> El periodo de nómina definido por Tecnoquimicas es de 30 días.
+          <br><br>
+          <strong>4.</strong> Los periodos de nómina se pueden borrar solo si no existen datos generados en ese periodo.
+          <br><br>
+          <strong>5.</strong> El periodo de nómina se ejecutará de acuerdo con lo establecido en el sistema.
+          <br><br>
+          <strong>6.</strong> El periodo de nómina no se podrá ejecutar por sucursal o área, todo debe ser a nivel de
+          Empresa Hija.
+        </p>
+
+      </div>
+
+      <div class="textual">
+        <br>
+
+        <h1>PASO A PASO</h1>
+        <p>Crear Periodos de nomina</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Periodos_de_nomina.mp4" type="video/mp4">
+      </video>
+
+      <div class="textual">
+        <br>
+        <p>Crear Periodos de nomina Automáticos</p>
+      </div>
+
+      <video class="video" width="930" controls>
+        <source src="Videos/Periodos_de_nomina_automaticos.mp4" type="video/mp4">
+      </video>
+
+      <br><br><br><br>
+      <a href="mailto:entrenamiento@tecnoquimicas.com" class="descargables">Enviar comentarios</a>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="Interaccion.js"></script>
+
+</body>
+
+</html>
